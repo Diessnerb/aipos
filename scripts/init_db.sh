@@ -35,5 +35,45 @@ SELECT id, '$CID', 'Alex@admin.com', 'Alex Admin', 'admin', true, true, '1201'
 FROM auth.users WHERE email = 'alex@admin.com';
 " 2>/dev/null
 
-echo "✅ INIT TERMINÉ !"
-echo "Connecte-toi avec Alex@admin.com / Ammimmer27 / PIN 1201"
+echo "4/3 Correction de la fonction get_tables_requiring_attention..."
+docker exec supabase_db_blsrpowvuxcvhqkeykyi psql -U postgres -d postgres -c "
+DROP FUNCTION IF EXISTS public.get_tables_requiring_attention(uuid);
+CREATE FUNCTION public.get_tables_requiring_attention(p_company_id uuid)
+ RETURNS TABLE(schedule_id uuid, table_id uuid, table_number integer, table_name text, service_status text, scheduled_at timestamp with time zone, scheduled_end text, duration_days integer)
+ LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
+AS \\$\\$\nBEGIN
+  RETURN QUERY
+  SELECT tss.id, t.id, t.table_number, t.table_name, tss.service_status, tss.scheduled_at, tss.scheduled_end, tss.duration_days
+  FROM public.table_service_schedules tss
+  JOIN public.tables t ON tss.table_id = t.id
+  WHERE tss.company_id = p_company_id AND tss.requires_attention = true AND tss.resolved_at IS NULL
+  ORDER BY tss.scheduled_end ASC NULLS LAST;
+END;
+\\$\\$\$\$;" 2>/dev/null && echo "  OK"
+
+echo "5/3 Création du bucket de stockage..."
+docker exec supabase_db_blsrpowvuxcvhqkeykyi psql -U postgres -d postgres -c "
+INSERT INTO storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
+VALUES ('company-assets', 'company-assets', true, 5242880, '{image/jpeg,image/png,image/webp,image/svg+xml}')
+ON CONFLICT (id) DO NOTHING;
+" 2>/dev/null && echo "  OK"
+
+# Politiques RLS storage
+docker exec supabase_db_blsrpowvuxcvhqkeykyi psql -U postgres -d postgres -c "
+CREATE POLICY IF NOT EXISTS select_public_buckets ON storage.buckets FOR SELECT TO public USING (public = true);
+CREATE POLICY IF NOT EXISTS all_authenticated_buckets ON storage.buckets FOR ALL TO authenticated USING (true) WITH CHECK (true);
+CREATE POLICY IF NOT EXISTS select_objects ON storage.objects FOR SELECT TO public USING (bucket_id IN (SELECT id FROM storage.buckets WHERE public = true));
+CREATE POLICY IF NOT EXISTS insert_objects ON storage.objects FOR INSERT TO authenticated WITH CHECK (bucket_id IN (SELECT id FROM storage.buckets WHERE public = true));
+CREATE POLICY IF NOT EXISTS update_objects ON storage.objects FOR UPDATE TO authenticated USING (bucket_id IN (SELECT id FROM storage.buckets WHERE public = true));
+CREATE POLICY IF NOT EXISTS delete_objects ON storage.objects FOR DELETE TO authenticated USING (bucket_id IN (SELECT id FROM storage.buckets WHERE public = true));
+" 2>/dev/null && echo "  OK"
+
+echo ""
+echo "═══════════════════════════════════════"
+echo "  ✅ INIT TERMINÉ !"
+echo "═══════════════════════════════════════"
+echo ""
+echo "Connecte-toi sur http://localhost:8080"
+echo "  Email : Alex@admin.com"
+echo "  Pass  : Ammimmer27"
+echo "  PIN   : 1201"
