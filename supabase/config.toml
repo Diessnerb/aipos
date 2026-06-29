@@ -1,0 +1,208 @@
+project_id = "blsrpowvuxcvhqkeykyi"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+[db]
+port = 54322
+
+[db.pooler]
+enabled = false
+port = 54329
+pool_mode = "transaction"
+default_pool_size = 20
+max_client_conn = 100
+
+[realtime]
+enabled = true
+ip_version = "IPv4"
+
+[studio]
+enabled = true
+port = 54324
+api_url = "http://localhost"
+
+[local_smtp]
+enabled = true
+port = 54325
+smtp_port = 54326
+pop3_port = 55327
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["https://localhost:3000"]
+jwt_expiry = 3600
+enable_signup = true
+
+[functions.ai-campaign]
+verify_jwt = true
+
+[functions.ai-assistant]
+verify_jwt = false
+
+[functions.reservation-ai]
+verify_jwt = false
+
+[functions.customer-ai]
+verify_jwt = false
+
+[functions.inventory-ai]
+verify_jwt = false
+
+[functions.continuous-optimizer]
+verify_jwt = false
+
+[functions.ai-optimizer-advisor]
+verify_jwt = false
+
+[functions.delete_user]
+verify_jwt = true
+
+[functions.create-company-admin]
+verify_jwt = true
+
+[functions.test-function]
+verify_jwt = false
+
+[functions.company-settings-update]
+verify_jwt = false
+
+[functions.cleanup-tables]
+verify_jwt = false
+
+[functions.delivery-settings-update]
+verify_jwt = false
+
+[functions.external-reservation-ingest]
+verify_jwt = false
+
+[functions.external-reservation-search]
+verify_jwt = false
+
+[functions.external-reservation-list]
+verify_jwt = false
+
+[functions.external-api-health]
+verify_jwt = false
+
+[functions.test-large-party-assignment]
+verify_jwt = false
+
+[functions.pin-customers-fetch]
+verify_jwt = false
+
+[functions.pin-users-fetch]
+verify_jwt = false
+
+[functions.pin-reservations-fetch]
+verify_jwt = false
+
+[functions.pin-orders-fetch]
+verify_jwt = false
+
+[functions.pin-ingredients-fetch]
+verify_jwt = false
+
+[functions.pin-suppliers-fetch]
+verify_jwt = false
+
+[functions.pin-wastage-fetch]
+verify_jwt = false
+
+[functions.pin-reservation-save]
+verify_jwt = false
+
+[functions.pin-reservation-status-update]
+verify_jwt = false
+
+[functions.pos-webhook]
+verify_jwt = false
+
+[functions.pos-test-connection]
+verify_jwt = false
+
+[functions.availability-check]
+verify_jwt = false
+
+[functions.test-smart-assignment]
+verify_jwt = false
+
+[functions.check-service-schedules]
+verify_jwt = false
+
+[functions.send-reservation-reminders]
+verify_jwt = false
+
+[functions.twilio-webhook-inbound]
+verify_jwt = false
+
+[functions.check-course-timers]
+verify_jwt = false
+
+[functions.check-course-duration-timers]
+verify_jwt = false
+
+[functions.get-menu-for-voice-agent]
+verify_jwt = false
+
+[functions.enhance-dish-image]
+verify_jwt = false
+
+[functions.auto-generate-social-post]
+verify_jwt = false
+
+[functions.process-image-queue]
+verify_jwt = false
+
+[functions.pin-tables-fetch]
+verify_jwt = false
+
+[functions.pin-menu-items-fetch]
+verify_jwt = false
+
+[functions.pin-menu-categories-fetch]
+verify_jwt = false
+
+[functions.oauth-callback]
+verify_jwt = false
+
+[functions.pin-deals-fetch]
+verify_jwt = false
+
+[functions.pin-delivery-orders-fetch]
+verify_jwt = false
+
+[functions.pin-delivery-order-items-fetch]
+verify_jwt = false
+
+[functions.pin-delivery-settings-fetch]
+verify_jwt = false
+
+[functions.pin-delivery-schedules-fetch]
+verify_jwt = false
+
+[functions.pin-analytics-revenue-fetch]
+verify_jwt = false
+
+[functions.pin-analytics-reservations-fetch]
+verify_jwt = false
+
+[functions.pin-mutation]
+verify_jwt = false
+
+[functions.pin-customer-save]
+verify_jwt = false
+
+[functions.create-super-admin]
+verify_jwt = false
+
+[functions.update-admin-credentials]
+verify_jwt = false

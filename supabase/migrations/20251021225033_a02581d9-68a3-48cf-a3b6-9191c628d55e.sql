@@ -1,0 +1,3 @@
+-- Ensure REPLICA IDENTITY FULL is set for real-time updates
+ALTER TABLE orders REPLICA IDENTITY FULL;
+ALTER TABLE order_items REPLICA IDENTITY FULL;
