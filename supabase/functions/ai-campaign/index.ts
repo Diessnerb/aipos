@@ -91,7 +91,7 @@ Write the marketing content now:`;
         throw new Error('Invalid API key. Please check your AI configuration.');
       }
       if (response.status === 402) {
-        throw new Error('AI credits exhausted. Please add credits to your Lovable workspace.');
+        throw new Error('AI credits exhausted. Please configure your AI provider.');
       }
       
       throw new Error(`AI Gateway error: ${response.statusText}`);

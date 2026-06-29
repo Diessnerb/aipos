@@ -132,7 +132,7 @@ User → Page Component → useAIContext (fetches company data)
      ↓
    AI Edge Function (receives context with security boundaries)
      ↓
-   Lovable AI Gateway (processes with data isolation)
+   OrderGenieSolution AI Gateway (processes with data isolation)
      ↓
    Streaming Response → UI Components
 ```
@@ -317,7 +317,7 @@ function ReservationForm() {
 ## Documentation Links
 
 - [Phase 1 Components](./README.md)
-- [Lovable AI Gateway Docs](https://docs.lovable.dev/features/ai)
+- [OrderGenieSolution AI Gateway Docs](https://docs.ordergeniesolution.dev/features/ai)
 - [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 - [Supabase RLS](https://supabase.com/docs/guides/auth/row-level-security)
 
@@ -329,5 +329,5 @@ Built with:
 - React + TypeScript
 - Tailwind CSS
 - Supabase
-- Lovable AI Gateway (Gemini 2.5 Flash)
+- OrderGenieSolution AI Gateway (Gemini 2.5 Flash)
 - Web Speech API

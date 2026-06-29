@@ -8,7 +8,7 @@ export interface SyncConfig {
   companyId: string;
   posSystem: string;
   syncDirection: 'bidirectional' | 'to_pos' | 'from_pos';
-  conflictResolution: 'aipos_wins' | 'pos_wins' | 'manual';
+  conflictResolution: 'ordergeniesolution_wins' | 'pos_wins' | 'manual';
   batchSize: number;
   retryAttempts: number;
   enableRealtime: boolean;
@@ -245,7 +245,7 @@ export class SyncEngineService {
 
     if (existing) {
       // Handle conflict resolution
-      if (this.config.conflictResolution === 'aipos_wins') {
+      if (this.config.conflictResolution === 'ordergeniesolution_wins') {
         // Keep local version, just update external_pos_id if needed
         if (!existing.external_pos_id) {
           await supabase
@@ -351,7 +351,7 @@ export class SyncEngineService {
 
     if (existing) {
       // Handle conflicts
-      if (this.config.conflictResolution === 'aipos_wins') {
+      if (this.config.conflictResolution === 'ordergeniesolution_wins') {
         // Keep local, just link external ID
         if (!existing.external_pos_id) {
           await supabase

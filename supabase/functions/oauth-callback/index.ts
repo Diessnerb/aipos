@@ -25,7 +25,7 @@ Deno.serve(async (req) => {
     });
 
     // Get the app URL from environment or use default
-    const appUrl = Deno.env.get('APP_URL') || 'https://aipos.lovable.app';
+    const appUrl = Deno.env.get('APP_URL') || 'http://localhost:8080';
 
     // Handle OAuth errors
     if (error) {

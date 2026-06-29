@@ -78,7 +78,7 @@ serve(async (req) => {
       }))
     };
 
-    // Call Lovable AI for strategic advice
+    // Call AI for strategic advice
     const systemPrompt = `You are an expert restaurant table assignment optimizer. Analyze the current reservation layout and suggest strategic moves to optimize for future capacity.
 
 STRATEGIC PRIORITIES (in order):

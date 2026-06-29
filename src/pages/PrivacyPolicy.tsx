@@ -29,13 +29,13 @@ const PrivacyPolicy = () => {
           <div className="prose prose-neutral dark:prose-invert max-w-none space-y-6 pr-4">
             <header className="space-y-2 border-b border-border pb-6">
               <h1 className="text-4xl font-bold text-foreground">Privacy Policy</h1>
-              <h2 className="text-xl text-muted-foreground">AIPOS</h2>
+              <h2 className="text-xl text-muted-foreground">OrderGenieSolution</h2>
               <p className="text-sm text-muted-foreground">Last updated: 11 August 2025</p>
             </header>
 
             <div className="space-y-8">
               <p className="text-foreground leading-relaxed">
-                AIPOS ("we," "our," or "us") provides restaurant management tools including reservations, 
+                OrderGenieSolution ("we," "our," or "us") provides restaurant management tools including reservations, 
                 customer CRM, and related services ("the Service"). This Privacy Policy explains how we 
                 collect, use, and protect your information when you use our mobile application and any 
                 related services.
@@ -129,7 +129,7 @@ const PrivacyPolicy = () => {
                 <h3 className="text-2xl font-semibold text-foreground mb-4">5. Your Rights & Choices</h3>
                 <p className="text-foreground">
                   You may request access, correction, or deletion of your personal information, and you may 
-                  withdraw consent to certain data uses. To exercise these rights, contact us at info@aiposnow.ai.
+                  withdraw consent to certain data uses. To exercise these rights, contact us at info@ordergeniesolution.ai.
                 </p>
               </section>
 
@@ -168,15 +168,15 @@ const PrivacyPolicy = () => {
               <section>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">10. Contact Us</h3>
                 <div className="text-foreground space-y-1">
-                  <p className="font-medium">AIPOS</p>
-                  <p>info@aiposnow.ai</p>
+                  <p className="font-medium">OrderGenieSolution</p>
+                  <p>info@ordergeniesolution.ai</p>
                   <p>52 South Croft, NR9 3EB, United Kingdom</p>
                 </div>
               </section>
 
               <footer className="border-t border-border pt-6 mt-8">
                 <p className="text-sm text-muted-foreground text-center">
-                  © AIPOS. All rights reserved.
+                  © OrderGenieSolution. All rights reserved.
                 </p>
               </footer>
             </div>

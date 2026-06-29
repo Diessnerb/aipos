@@ -763,7 +763,7 @@ export const AIAssistant: React.FC<AIAssistantProps> = ({ isOpen, onClose }) => 
                 </div>
               </div>
             )}
-            {/* Invisible element to scroll to with spacing like Lovable */}
+            {/* Invisible element to scroll to with spacing */}
             <div ref={scrollEndRef} className="h-4" />
           </div>
         )}

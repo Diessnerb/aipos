@@ -1,4 +1,4 @@
-# 🏪 AIPOS — Restaurant Management System
+# 🏪 OrderGenieSolution — Restaurant Management System
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-Private-red)
@@ -54,7 +54,7 @@ docker --version   # Doit afficher 24.x.x ou plus
 
 ```bash
 git clone <url-du-repo>
-cd aipos
+cd OrderGenieSolution
 ```
 
 **Option B — Sans Git (zip)**
@@ -258,7 +258,7 @@ npm run dev
 ## 📁 Structure du projet
 
 ```
-aipos/
+OrderGenieSolution/
 ├── src/                    # Code source React
 │   ├── components/         # Composants UI
 │   ├── hooks/              # Hooks React

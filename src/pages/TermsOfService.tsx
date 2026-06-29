@@ -29,13 +29,13 @@ const TermsOfService = () => {
           <div className="prose prose-neutral dark:prose-invert max-w-none space-y-6 pr-4">
             <header className="space-y-2 border-b border-border pb-6">
               <h1 className="text-4xl font-bold text-foreground">Terms of Service</h1>
-              <h2 className="text-xl text-muted-foreground">AIPOS</h2>
+              <h2 className="text-xl text-muted-foreground">OrderGenieSolution</h2>
               <p className="text-sm text-muted-foreground">Last updated: November 14, 2025</p>
             </header>
 
             <div className="space-y-8">
               <p className="text-foreground leading-relaxed">
-                These Terms of Service ("Terms") govern your access to and use of AIPOS ("we," "our," or "us"), 
+                These Terms of Service ("Terms") govern your access to and use of OrderGenieSolution ("we," "our," or "us"), 
                 including our restaurant management platform, mobile applications, and related services 
                 (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms.
               </p>
@@ -52,7 +52,7 @@ const TermsOfService = () => {
               <section>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">2. Description of Service</h3>
                 <p className="text-foreground leading-relaxed mb-4">
-                  AIPOS provides a comprehensive restaurant management platform that includes:
+                  OrderGenieSolution provides a comprehensive restaurant management platform that includes:
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-foreground ml-4">
                   <li>Point of Sale (POS) system</li>
@@ -117,7 +117,7 @@ const TermsOfService = () => {
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-foreground ml-4">
                   <li>The terms and conditions of the respective third-party platforms</li>
-                  <li>The permissions you grant to AIPOS to access your third-party accounts</li>
+                  <li>The permissions you grant to OrderGenieSolution to access your third-party accounts</li>
                   <li>Meta's Platform Terms and Developer Policies (for Facebook and Instagram integrations)</li>
                 </ul>
                 <p className="text-foreground leading-relaxed mt-3">
@@ -132,7 +132,7 @@ const TermsOfService = () => {
                   <div>
                     <h4 className="text-lg font-medium text-foreground mb-2">a) Our Rights</h4>
                     <p className="text-foreground">
-                      The Service, including all content, features, and functionality, is owned by AIPOS and is 
+                      The Service, including all content, features, and functionality, is owned by OrderGenieSolution and is 
                       protected by copyright, trademark, and other intellectual property laws. You may not copy, 
                       modify, distribute, sell, or lease any part of our Service without our express written permission.
                     </p>
@@ -223,7 +223,7 @@ const TermsOfService = () => {
               <section>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">12. Limitation of Liability</h3>
                 <p className="text-foreground leading-relaxed">
-                  TO THE MAXIMUM EXTENT PERMITTED BY LAW, AIPOS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, 
+                  TO THE MAXIMUM EXTENT PERMITTED BY LAW, OrderGenieSolution SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, 
                   SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED 
                   DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING 
                   FROM (A) YOUR USE OR INABILITY TO USE THE SERVICE; (B) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR 
@@ -235,7 +235,7 @@ const TermsOfService = () => {
               <section>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">13. Indemnification</h3>
                 <p className="text-foreground leading-relaxed">
-                  You agree to indemnify, defend, and hold harmless AIPOS and its officers, directors, employees, 
+                  You agree to indemnify, defend, and hold harmless OrderGenieSolution and its officers, directors, employees, 
                   and agents from any claims, liabilities, damages, losses, and expenses, including reasonable 
                   attorneys' fees, arising out of or in any way connected with your access to or use of the Service, 
                   your violation of these Terms, or your violation of any rights of another party.
@@ -255,7 +255,7 @@ const TermsOfService = () => {
                 <h3 className="text-2xl font-semibold text-foreground mb-4">15. Governing Law</h3>
                 <p className="text-foreground leading-relaxed">
                   These Terms shall be governed by and construed in accordance with the laws of the jurisdiction 
-                  in which AIPOS is registered, without regard to its conflict of law provisions.
+                  in which OrderGenieSolution is registered, without regard to its conflict of law provisions.
                 </p>
               </section>
 
@@ -265,8 +265,8 @@ const TermsOfService = () => {
                   If you have any questions about these Terms, please contact us at:
                 </p>
                 <div className="bg-muted/50 rounded-lg p-4 space-y-1">
-                  <p className="text-foreground font-medium">AIPOS</p>
-                  <p className="text-muted-foreground">Email: support@aipos.com</p>
+                  <p className="text-foreground font-medium">OrderGenieSolution</p>
+                  <p className="text-muted-foreground">Email: contact@ordergeniesolution.com</p>
                   <p className="text-muted-foreground">Address: [Your Business Address]</p>
                 </div>
               </section>
@@ -284,7 +284,7 @@ const TermsOfService = () => {
                 <h3 className="text-2xl font-semibold text-foreground mb-4">18. Entire Agreement</h3>
                 <p className="text-foreground leading-relaxed">
                   These Terms, together with our Privacy Policy, constitute the entire agreement between you and 
-                  AIPOS regarding the use of the Service and supersede all prior agreements and understandings, 
+                  OrderGenieSolution regarding the use of the Service and supersede all prior agreements and understandings, 
                   whether written or oral.
                 </p>
               </section>

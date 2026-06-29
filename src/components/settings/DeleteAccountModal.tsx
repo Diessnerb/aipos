@@ -147,7 +147,7 @@ const DeleteAccountModal = ({ isOpen, onClose }: DeleteAccountModalProps) => {
             <p className="text-xs text-muted-foreground">
               Need help?{' '}
               <a 
-                href="mailto:info@aiposnow.ai" 
+                href="mailto:contact@ordergeniesolution.ai" 
                 className="text-primary hover:underline"
               >
                 Contact support

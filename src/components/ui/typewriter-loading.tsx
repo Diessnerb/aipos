@@ -10,7 +10,7 @@ interface TypewriterLoadingProps {
 }
 
 export const TypewriterLoading: React.FC<TypewriterLoadingProps> = ({
-  text = "AIPOS",
+  text = "OrderGenieSolution",
   speed = 150,
   className,
   showCursor = true

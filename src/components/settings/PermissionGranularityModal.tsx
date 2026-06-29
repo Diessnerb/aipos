@@ -90,7 +90,7 @@ const defaultPermissions: PermissionOption[] = [
   {
     id: 'menu_write',
     name: 'Menu Data (Write)',
-    description: 'Allow AIPOS to update menu items back to POS',
+    description: 'Allow OrderGenieSolution to update menu items back to POS',
     icon: Menu,
     category: 'optional',
     enabled: false,

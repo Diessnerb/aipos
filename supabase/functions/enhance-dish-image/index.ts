@@ -66,7 +66,7 @@ serve(async (req) => {
     const base64Image = btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)));
     const imageUrl = `data:${asset.mime_type};base64,${base64Image}`;
     
-    // 5. Call Lovable AI Gateway with Gemini 2.5 Flash for image enhancement
+    // 5. Call AI Gateway with Gemini 2.5 Flash for image enhancement
     const enhancementPrompt = `Transform this restaurant dish photo into an ultra-realistic, professional food photography masterpiece.
 
 Enhancement Guidelines:

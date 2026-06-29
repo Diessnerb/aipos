@@ -1,6 +1,6 @@
-# 📓 Journal de Bord : Migration de la Base de Données (AIPOS)
+# 📓 Journal de Bord : Migration de la Base de Données (OrderGenieSolution)
 
-Ce document retrace toutes les étapes de la migration de la base de données AIPOS pour passer de **Supabase Cloud (Payant)** à un **Supabase Auto-Hébergé (Gratuit et Local)**. Il contient le plan de migration détaillé, le suivi de l'avancement et les étapes restantes.
+Ce document retrace toutes les étapes de la migration de la base de données OrderGenieSolution pour passer de **Supabase Cloud (Payant)** à un **Supabase Auto-Hébergé (Gratuit et Local)**. Il contient le plan de migration détaillé, le suivi de l'avancement et les étapes restantes.
 
 ---
 
