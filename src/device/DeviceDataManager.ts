@@ -2466,10 +2466,10 @@ class DeviceDataManagerClass {
       
       // Verify cache was set
       const cached = this.queryClient.getQueryData(['table_groups', this.companyId]);
-      if (!cached || (Array.isArray(cached) && cached.length === 0)) {
+      if (cached === undefined || cached === null) {
         console.error('⚠️ [CRITICAL] Table groups cache verification FAILED!');
       } else {
-        console.log('✅ [CRITICAL] Table groups cache verified');
+        console.log(`✅ [CRITICAL] Table groups cache verified (${(cached as any[])?.length || 0} groups)`);
       }
     } catch (error) {
       console.error('❌ [CRITICAL] Error seeding table_groups cache:', error);
